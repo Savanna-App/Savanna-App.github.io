@@ -195,8 +195,7 @@ if (reduce) document.querySelectorAll('[data-loop]').forEach((v) => { v.removeAt
     .then((r) => (r.ok ? r.json() : null))
     .then((release) => {
       if (!release || release.draft || release.prerelease) return;
-      const dmg = (release.assets || []).find((a) => a.name === 'Savanna.dmg');
-      if (dmg) links.forEach((a) => { a.href = dmg.browser_download_url; });
+      // Buttons keep the stable latest/download/Savanna.dmg link; only the version label is filled in.
       const version = String(release.tag_name || '').replace(/^v/, '');
       document.querySelectorAll('[data-release-version]').forEach((el) => { el.textContent = version ? ` · v${version}` : ''; });
       document.querySelectorAll('[data-release-page]').forEach((el) => { el.href = release.html_url; });
