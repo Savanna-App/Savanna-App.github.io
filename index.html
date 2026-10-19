@@ -18,6 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/stage.css">
   <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
@@ -37,9 +38,60 @@
     </div>
   </nav>
 
-  <div class="hero__copy wrap">
-    <h1 class="hero__title" data-rise style="--i:0">Savanna</h1>
-    <p class="hero__lead" data-rise style="--i:1">Record your screen. Savanna writes the narration and reads it aloud, right on your Mac.</p>
+  <div class="hero__copy hero__copy--stage wrap">
+    <h1 class="hero__headline" data-rise style="--i:0">Record your screen.<br><em>Savanna tells the story.</em></h1>
+    <p class="hero__lead" data-rise style="--i:1">On-device AI writes the narration and reads it aloud, right on your Mac.</p>
+
+    <figure class="stage" data-stage data-rise style="--i:2" aria-label="Savanna records a region of the screen, zooms toward a click, then writes and voices the narration in its editor">
+      <div class="stage__chrome" aria-hidden="true">
+        <span class="stage__lights"><i></i><i></i><i></i></span>
+        <span class="stage__title"><span class="stage__title-rec">Recording · Plains at dusk</span><span class="stage__title-edit">Savanna — Plains at dusk</span></span>
+      </div>
+      <div class="stage__screen" aria-hidden="true">
+        <!-- the footage: first the screen being recorded, then the editor's preview -->
+        <div class="stage__film">
+          <div class="stage__zoom">
+            <video class="stage__video" autoplay muted loop playsinline preload="auto" poster="assets/thomson-s-gazelles-poster.jpg" width="848" height="480" data-loop>
+              <source src="assets/thomson-s-gazelles.mp4" type="video/mp4">
+              <source src="assets/thomson-s-gazelles.webm" type="video/webm">
+            </video>
+          </div>
+          <div class="stage__select"><span class="stage__dims">0 × 0</span></div>
+          <span class="stage__ripple"></span>
+        </div>
+
+        <!-- recording controls (Savanna's floating bar) -->
+        <div class="stage__rec">
+          <span class="stage__dot"></span><span class="stage__time">00:00</span>
+          <span class="stage__sep"></span>
+          <svg viewBox="0 0 16 16"><rect x="3.5" y="3" width="3" height="10" rx="1"/><rect x="9.5" y="3" width="3" height="10" rx="1"/></svg>
+          <svg class="stage__stop" viewBox="0 0 16 16"><rect x="3" y="3" width="10" height="10" rx="2.5"/></svg>
+        </div>
+
+        <!-- the editor's inspector: Narration tab, AI Script -->
+        <aside class="stage__inspector">
+          <div class="stage__tabs"><span class="is-on">Narration</span><span>Style</span><span>AI Assist</span></div>
+          <div class="stage__head"><svg viewBox="0 0 24 24"><path d="M12 2.5l1.9 5.6 5.6 1.9-5.6 1.9L12 17.5l-1.9-5.6-5.6-1.9 5.6-1.9zM19 15l.9 2.1 2.1.9-2.1.9L19 21l-.9-2.1-2.1-.9 2.1-.9z"/></svg>AI Script</div>
+          <p class="stage__status">Reading your screen and what you said…</p>
+          <ol class="stage__lines">
+            <li><span class="stage__at">0:01</span><span class="stage__say" data-line="Thomson’s gazelles graze the plains at dusk."></span><i class="stage__wave"></i></li>
+            <li><span class="stage__at">0:04</span><span class="stage__say" data-line="Watch closely: one lifts its head, alert."></span><i class="stage__wave"></i></li>
+            <li><span class="stage__at">0:08</span><span class="stage__say" data-line="One take, narrated in 49 languages."></span><i class="stage__wave"></i></li>
+          </ol>
+          <span class="stage__generate">Generate Voice</span>
+        </aside>
+
+        <!-- the editor's timeline: Video, Effects, Voice-over -->
+        <div class="stage__timeline">
+          <div class="stage__lane"><b>Video</b><span class="stage__clip stage__clip--video"></span></div>
+          <div class="stage__lane"><b>Effects</b><span class="stage__clip stage__clip--zoom">Zoom 1.8×</span></div>
+          <div class="stage__lane"><b>Voice-over</b><span class="stage__clip stage__clip--voice" style="--a:6%;--w:26%"></span><span class="stage__clip stage__clip--voice" style="--a:35%;--w:27%"></span><span class="stage__clip stage__clip--voice" style="--a:68%;--w:24%"></span></div>
+          <span class="stage__playhead"></span>
+        </div>
+
+        <svg class="stage__cursor" viewBox="0 0 24 24"><path d="M5 2.5v17.2l4.6-4.4 2.9 6.6 2.8-1.2-2.9-6.5h6.4z"/></svg>
+      </div>
+    </figure>
   </div>
 
   <div class="folders" data-carousel aria-roledescription="carousel" aria-label="What Savanna does">
@@ -97,11 +149,11 @@
         <div class="folder__text">
           <div class="download"><a class="button" href="https://github.com/Savanna-App/releases/releases/latest/download/Savanna.dmg" data-download>Download for Mac</a><span class="download__req">Requires macOS 26 Tahoe or later · Apple silicon</span></div>
           <h2 class="folder__title">Then a voice reads it</h2>
-          <p>Premium Apple voices, your own Personal Voice, or local AI voices through Voicebox. In 49 languages.</p>
+          <p>54 lifelike voices built in, Apple voices in 49 languages, or a clone of your own voice. All on your Mac.</p>
         </div>
         <figure class="folder__media">
           <div class="ui-voice" data-ui>
-            <div class="ui-voice__pick"><span class="ui-voice__name">Ava</span><span class="ui-pill">Premium</span><span class="ui-voice__lang">English (United States)</span></div>
+            <div class="ui-voice__pick"><span class="ui-voice__name">Heart</span><span class="ui-pill">Natural</span><span class="ui-voice__lang">English (United States)</span></div>
             <div class="ui-track">
               <div class="ui-clip" style="--w:34%"><b>Meet Notely, the notes app…</b><i class="wave"></i></div>
               <div class="ui-clip" style="--w:30%; --l:38%"><b>Drop in a link and it…</b><i class="wave"></i></div>
@@ -285,7 +337,7 @@
   <div class="faq__list">
     <details name="faq" data-reveal open>
       <summary>Does my recording leave my Mac?<span class="pm"></span></summary>
-      <div class="faq__a"><p>No. Recording, transcription, the AI script and Apple's voices all run on your Mac. If you choose Voicebox, it talks to an app on your own machine.</p></div>
+      <div class="faq__a"><p>No. Recording, transcription, the AI script and every voice run on your Mac. Natural voices and voice cloning download once, then work offline.</p></div>
     </details>
     <details name="faq" data-reveal>
       <summary>What do I need to run it?<span class="pm"></span></summary>
@@ -297,7 +349,7 @@
     </details>
     <details name="faq" data-reveal>
       <summary>Can it use my own voice?<span class="pm"></span></summary>
-      <div class="faq__a"><p>Talk while you record and Savanna turns your words into polished, timed lines. You can also narrate with your Personal Voice, or a voice you clone in Voicebox.</p></div>
+      <div class="faq__a"><p>Talk while you record and Savanna turns your words into polished, timed lines. You can also narrate with your Personal Voice, or clone your own voice: read a short paragraph aloud and Savanna sets everything up for you.</p></div>
     </details>
     <details name="faq" data-reveal>
       <summary>Can I write the script myself?<span class="pm"></span></summary>
@@ -364,5 +416,6 @@
 </svg>
 
 <script src="js/site.js" defer></script>
+<script src="js/stage.js" defer></script>
 </body>
 </html>
