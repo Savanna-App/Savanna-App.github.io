@@ -87,7 +87,10 @@ img { background: transparent; }
 .folder__body { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(20px, 3vw, 48px); padding: 32px; height: 100%; opacity: 0; visibility: hidden; transition: opacity 360ms ease, visibility 0s linear 360ms; }
 .folder.is-front .folder__body { opacity: 1; visibility: visible; transition: opacity 480ms ease 220ms, visibility 0s; }
 .folder__text { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; }
-.folder__text .button { background: var(--night); color: var(--paper); margin-bottom: clamp(16px, 4svh, 56px); }
+.folder__text .button { background: var(--night); color: var(--paper); }
+.folder__text .download { margin-bottom: clamp(16px, 4svh, 56px); }
+.download { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.download__req { font-size: 0.75rem; line-height: 1.3; opacity: 0.72; letter-spacing: 0.01em; }
 .folder__title { font-size: var(--step-head); line-height: 1; letter-spacing: -0.03em; max-width: 12ch; }
 .folder__text p { font-size: var(--step-body); max-width: 34ch; }
 .folder__media { align-self: start; }
