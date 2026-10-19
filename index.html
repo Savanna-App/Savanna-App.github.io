@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Savanna · Record your screen. AI tells the story.</title>
+  <meta name="description" content="Savanna is a Mac screen recorder. On-device AI writes the narration from your screen and your voice, and reads it aloud in 49 languages.">
+  <meta name="theme-color" content="#1c0b1d">
+  <meta property="og:title" content="Savanna · Record your screen. AI tells the story.">
+  <meta property="og:description" content="A Mac screen recorder where on-device AI writes and voices the narration.">
+  <meta property="og:image" content="https://savanna-app.github.io/img/social.png">
+  <meta property="og:url" content="https://savanna-app.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/site.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<!-- ============ HERO: the sun setting behind a stack of folders ============ -->
+<header class="hero" id="top">
+  <nav class="topbar wrap" aria-label="Main">
+    <a class="wordmark" href="#top" aria-label="Savanna, home">
+      <img src="img/mark.svg" width="28" height="28" alt="">
+      <span>Savanna</span>
+    </a>
+    <div class="topbar__links">
+      <a class="link" href="#how">How it works</a>
+      <a class="link" href="#features">Features</a>
+      <a class="link" href="#faq">FAQ</a>
+      <a class="button button--small" href="#download">Download</a>
+    </div>
+  </nav>
+
+  <div class="hero__copy wrap">
+    <h1 class="hero__title" data-rise style="--i:0">Savanna</h1>
+    <p class="hero__lead" data-rise style="--i:1">Record your screen. Savanna writes the narration and reads it aloud, right on your Mac.</p>
+  </div>
+
+  <div class="folders" data-carousel aria-roledescription="carousel" aria-label="What Savanna does">
+    <div class="hero__sun" aria-hidden="true"><svg viewBox="0 0 100 100"><use href="#sun"/></svg></div>
+    <!-- tabs come first in the DOM so keyboard users meet them before the slides -->
+    <div class="folders__tabs" role="tablist" aria-label="Steps">
+      <button class="tab" role="tab" data-slide="0" aria-selected="true" style="--x:4%">Record<span class="tab__fill"></span></button>
+      <button class="tab" role="tab" data-slide="1" aria-selected="false" style="--x:23%">Write<span class="tab__fill"></span></button>
+      <button class="tab" role="tab" data-slide="2" aria-selected="false" style="--x:42%">Voice<span class="tab__fill"></span></button>
+      <button class="tab" role="tab" data-slide="3" aria-selected="false" style="--x:61%">Effects<span class="tab__fill"></span></button>
+      <button class="tab" role="tab" data-slide="4" aria-selected="false" style="--x:80%">Save<span class="tab__fill"></span></button>
+    </div>
+
+    <article class="folder" data-folder="0" role="tabpanel" style="--field: var(--gold); --field-ink: var(--night)">
+      <div class="folder__body">
+        <div class="folder__text">
+          <a class="button" href="#download">Download for Mac</a>
+          <h2 class="folder__title">Record all of it, or a corner</h2>
+          <p>Press ⇧⌘1 for the whole screen or ⇧⌘2 to drag out a region. Talk if you like; Savanna listens.</p>
+        </div>
+        <figure class="folder__media">
+          <div class="ui-screen" data-ui>
+            <img src="assets/serengeti-sunset-tanzania.jpg" width="1120" height="760" alt="A recording in progress over a photo of a Serengeti sunset">
+            <div class="ui-region"><span>1280 × 720</span></div>
+            <div class="ui-hud">
+              <span class="ui-hud__dot"></span><span class="ui-hud__time">0:42</span>
+              <span class="ui-hud__btn" aria-hidden="true"><svg viewBox="0 0 16 16"><rect x="4" y="3" width="3" height="10" rx="1"/><rect x="9" y="3" width="3" height="10" rx="1"/></svg></span>
+              <span class="ui-hud__btn ui-hud__btn--stop" aria-hidden="true"><svg viewBox="0 0 16 16"><rect x="4" y="4" width="8" height="8" rx="1.5"/></svg></span>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </article>
+
+    <article class="folder" data-folder="1" role="tabpanel" style="--field: var(--coral); --field-ink: var(--night)">
+      <div class="folder__body">
+        <div class="folder__text">
+          <a class="button" href="#download">Download for Mac</a>
+          <h2 class="folder__title">It writes what to say</h2>
+          <p>On-device Apple Intelligence reads your screen and what you said, then drafts timed lines you can edit.</p>
+        </div>
+        <figure class="folder__media">
+          <div class="ui-script" data-ui>
+            <div class="ui-script__head">Script <span>3 lines · Presentation</span></div>
+            <div class="ui-line"><span class="ui-time">0:00.3</span><p>Meet Notely, the notes app that sorts your ideas for you.</p></div>
+            <div class="ui-line is-on"><span class="ui-time">0:06.1</span><p>Drop in a link and it files itself under the right project.</p></div>
+            <div class="ui-line"><span class="ui-time">0:12.4</span><p>Search finds a thought by its meaning, not just its words.</p></div>
+          </div>
+        </figure>
+      </div>
+    </article>
+
+    <article class="folder" data-folder="2" role="tabpanel" style="--field: var(--mulberry); --field-ink: var(--paper)">
+      <div class="folder__body">
+        <div class="folder__text">
+          <a class="button" href="#download">Download for Mac</a>
+          <h2 class="folder__title">Then a voice reads it</h2>
+          <p>Premium Apple voices, your own Personal Voice, or local AI voices through Voicebox. In 49 languages.</p>
+        </div>
+        <figure class="folder__media">
+          <div class="ui-voice" data-ui>
+            <div class="ui-voice__pick"><span class="ui-voice__name">Ava</span><span class="ui-pill">Premium</span><span class="ui-voice__lang">English (United States)</span></div>
+            <div class="ui-track">
+              <div class="ui-clip" style="--w:34%"><b>Meet Notely, the notes app…</b><i class="wave"></i></div>
+              <div class="ui-clip" style="--w:30%; --l:38%"><b>Drop in a link and it…</b><i class="wave"></i></div>
+              <div class="ui-clip" style="--w:24%; --l:72%"><b>Search finds a…</b><i class="wave"></i></div>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </article>
+
+    <article class="folder" data-folder="3" role="tabpanel" style="--field: var(--sun); --field-ink: var(--night)">
+      <div class="folder__body">
+        <div class="folder__text">
+          <a class="button" href="#download">Download for Mac</a>
+          <h2 class="folder__title">Zoom in where you click</h2>
+          <p>Zooms follow your clicks or your pointer. Text, blur and highlights are one click from the timeline.</p>
+        </div>
+        <figure class="folder__media">
+          <img src="assets/render-zoom.jpg" width="1920" height="1200" alt="Savanna output: a zoom toward a click, with a yellow pulse, framed on a gradient">
+        </figure>
+      </div>
+    </article>
+
+    <article class="folder" data-folder="4" role="tabpanel" style="--field: var(--paper); --field-ink: var(--night)">
+      <div class="folder__body">
+        <div class="folder__text">
+          <a class="button" href="#download">Download for Mac</a>
+          <h2 class="folder__title">Save it anywhere you like</h2>
+          <p>MP4 or HEVC, framed on a MacBook, a browser or an iPhone. The library remembers where every video went.</p>
+        </div>
+        <figure class="folder__media">
+          <img src="assets/render-macbook.jpg" width="1920" height="1200" alt="Savanna output: a video framed on a MacBook with a caption">
+        </figure>
+      </div>
+    </article>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HOW IT WORKS: one card, four fields ============ -->
+<section class="how" id="how" aria-labelledby="how-title">
+  <div class="how__field" style="--field: var(--gold); --field-ink: var(--night)">
+    <h2 id="how-title" class="how__title" data-reveal>From take to film</h2>
+    <div class="card" data-ui data-reveal>
+      <img src="assets/render-browser.jpg" width="1920" height="1200" alt="" loading="lazy">
+      <div class="card__meta"><b>Recording, Oct 18</b><span>0:42 · Draft</span></div>
+    </div>
+    <p class="how__clause" data-reveal>First, you just record.</p>
+  </div>
+  <div class="how__field" style="--field: var(--coral); --field-ink: var(--night)">
+    <div class="card" data-ui data-reveal>
+      <img src="assets/render-browser.jpg" width="1920" height="1200" alt="" loading="lazy">
+      <div class="card__meta"><b>Notely in a minute</b><span>0:42 · 3 lines written</span></div>
+      <p class="card__line">“Meet Notely, the notes app that sorts your ideas for you.”</p>
+    </div>
+    <p class="how__clause" data-reveal>Then AI drafts the script.</p>
+  </div>
+  <div class="how__field" style="--field: var(--mulberry); --field-ink: var(--paper)">
+    <div class="card" data-ui data-reveal>
+      <img src="assets/render-browser.jpg" width="1920" height="1200" alt="" loading="lazy">
+      <div class="card__meta"><b>Notely in a minute</b><span>0:42 · Ava, Premium</span></div>
+      <i class="wave wave--card"></i>
+    </div>
+    <p class="how__clause" data-reveal>Then a voice reads it.</p>
+  </div>
+  <div class="how__field" style="--field: var(--dusk); --field-ink: var(--paper)">
+    <div class="card" data-ui data-reveal>
+      <img src="assets/render-macbook.jpg" width="1920" height="1200" alt="" loading="lazy">
+      <div class="card__meta"><b>Notely in a minute</b><span class="card__saved">Saved · 38 MB</span></div>
+      <p class="card__path">~/Movies/Notely in a minute.mp4</p>
+    </div>
+    <p class="how__clause" data-reveal>Then it lives where you want.</p>
+  </div>
+</section>
+
+<!-- ============ SHOWCASE: the record button, blown up (the live thing) ============ -->
+<section class="show" id="try" aria-labelledby="show-title" data-recording="false">
+  <div class="show__copy wrap">
+    <h2 id="show-title" class="show__title" data-reveal><span data-show-word>Press record.</span></h2>
+    <p data-reveal>Every Savanna video starts with this button. Go on, it works.</p>
+  </div>
+  <button class="rec" data-ui data-rec aria-pressed="false" aria-label="Record">
+    <span class="rec__sun"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#sun"/></svg></span>
+    <span class="rec__label"><span data-rec-label>Record</span> <span class="rec__time" data-rec-time>0:00</span></span>
+  </button>
+</section>
+
+<!-- ============ FEATURES: specimens on colour tiles ============ -->
+<section class="features wrap grid" id="features" aria-labelledby="features-title">
+  <div class="features__intro">
+    <h2 id="features-title" class="head" data-reveal>One-click edits</h2>
+    <p data-reveal>Every effect lands at the playhead with good defaults. Drag to adjust it, or don't.</p>
+  </div>
+  <ul class="tiles" role="list">
+    <li class="tile tile--wide" data-reveal style="--field: var(--gold)">
+      <div class="tile__stage"><img class="sunmask" src="assets/render-zoom.jpg" width="1920" height="1200" alt="Savanna output: zoomed toward a click" loading="lazy"></div>
+      <h3>Zoom on clicks</h3><p>Follows your clicks or your pointer, from 1.1× to 4×.</p>
+    </li>
+    <li class="tile" data-reveal style="--field: var(--coral)">
+      <div class="tile__stage"><img class="sunmask" src="assets/render-iphone.jpg" width="1080" height="1920" alt="Savanna output: a video framed on an iPhone" loading="lazy"></div>
+      <h3>Device frames</h3><p>MacBook, browser window or iPhone.</p>
+    </li>
+    <li class="tile" data-reveal style="--field: var(--mulberry)">
+      <div class="tile__stage"><img class="sunmask" src="assets/render-browser.jpg" width="1920" height="1200" alt="Savanna output: a highlight box and click ripple" loading="lazy"></div>
+      <h3>Blur and highlight</h3><p>Hide a password or spotlight a button in one drag.</p>
+    </li>
+    <li class="tile" data-reveal style="--field: var(--gold)">
+      <div class="tile__stage">
+        <div class="ui-assist" data-ui>
+          <b>Trim the idle moments</b>
+          <p>Nothing happens for 2.1s at the start. Cutting dead time makes a video feel professional.</p>
+          <span class="ui-apply">Apply</span>
+        </div>
+      </div>
+      <h3>AI Assist</h3><p>Explains each suggestion before it changes anything.</p>
+    </li>
+    <li class="tile" data-reveal style="--field: var(--mulberry)">
+      <div class="tile__stage">
+        <ul class="ui-langs" data-ui role="list">
+          <li>English</li><li class="is-on">Português (Brasil)</li><li>Español</li><li>Deutsch</li><li>日本語</li><li>Français</li>
+        </ul>
+      </div>
+      <h3>Any language</h3><p>Scripts and voices in 49 languages.</p>
+    </li>
+  </ul>
+</section>
+
+<!-- ============ SIGNATURE: index with preview ============ -->
+<section class="looks wrap" aria-labelledby="looks-title">
+  <h2 id="looks-title" class="head" data-reveal>Dress it for the room</h2>
+  <div class="index" data-index>
+    <ul class="index__rows" role="list">
+      <li class="index__row" data-preview="0" tabindex="0" data-reveal><img src="assets/render-macbook.jpg" width="1920" height="1200" alt="" loading="lazy"><span>On a MacBook</span><span class="index__note">for launch videos</span></li>
+      <li class="index__row" data-preview="1" tabindex="0" data-reveal><img src="assets/render-browser.jpg" width="1920" height="1200" alt="" loading="lazy"><span>In a browser window</span><span class="index__note">for web apps</span></li>
+      <li class="index__row" data-preview="2" tabindex="0" data-reveal><img src="assets/render-iphone.jpg" width="1080" height="1920" alt="" loading="lazy"><span>On an iPhone</span><span class="index__note">for tall regions</span></li>
+      <li class="index__row" data-preview="3" tabindex="0" data-reveal><img src="assets/render-zoom.jpg" width="1920" height="1200" alt="" loading="lazy"><span>On a soft field</span><span class="index__note">for everything else</span></li>
+    </ul>
+    <div class="index__frame" aria-hidden="true">
+      <img class="is-on" src="assets/render-macbook.jpg" width="1920" height="1200" alt="">
+      <img src="assets/render-browser.jpg" width="1920" height="1200" alt="">
+      <img src="assets/render-iphone.jpg" width="1080" height="1920" alt="">
+      <img src="assets/render-zoom.jpg" width="1920" height="1200" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE BAND: the savanna itself ============ -->
+<section class="band" aria-labelledby="band-title">
+  <div class="band__photo sunmask-wrap" data-reveal>
+    <img src="assets/017-sunset-in-the-serengeti-national-park.jpg" width="1920" height="1281" alt="The sun setting over a rocky kopje in the Serengeti" loading="lazy" data-drift>
+  </div>
+  <div class="band__copy wrap">
+    <h2 id="band-title" class="head" data-reveal>Why Savanna</h2>
+    <p class="statement" data-reveal>Named for the hour the grassland turns gold and the story tells itself. It does that for your screen.</p>
+  </div>
+  <ul class="band__strip" role="list">
+    <li data-reveal><img src="assets/acacia-vachellia-tortilis-parque-nacional-de-amboseli.jpg" width="1920" height="886" alt="A lone acacia on the plain in Amboseli" loading="lazy"></li>
+    <li data-reveal><img src="assets/gentle-giant-of-murchison-falls-elephants-03.jpg" width="1920" height="1277" alt="An elephant in tall golden grass at Murchison Falls" loading="lazy"></li>
+    <li data-reveal><img src="assets/the-golden-savanna-grasses-of-kidepo-valley.jpg" width="1920" height="929" alt="Golden savanna grass in Kidepo Valley" loading="lazy"></li>
+    <li data-reveal><video autoplay muted loop playsinline preload="metadata" poster="assets/thomson-s-gazelles-poster.jpg" width="848" height="480" aria-hidden="true" data-loop><source src="assets/thomson-s-gazelles.webm" type="video/webm"></video></li>
+  </ul>
+</section>
+
+<!-- ============ STATS: a figure set by a slider ============ -->
+<section class="stats wrap" aria-labelledby="stats-title">
+  <h2 id="stats-title" class="stats__q" data-reveal>How long is your demo?</h2>
+  <div class="slider" data-ui data-reveal>
+    <label for="minutes">Length <output data-minutes-out for="minutes">3 min</output></label>
+    <input id="minutes" type="range" min="0.5" max="20" step="0.5" value="3" data-minutes>
+  </div>
+  <div class="stats__result">
+    <p class="figure nums"><span data-figure>396</span><span class="figure__unit">words</span></p>
+    <p class="stats__how">Savanna's voices speak about 2.2 words a second, so that's the narration it drafts for you, timed to what happens on screen.</p>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq wrap grid" id="faq" aria-labelledby="faq-title">
+  <h2 id="faq-title" class="faq__title head">Fair questions</h2>
+  <div class="faq__list">
+    <details name="faq" data-reveal open>
+      <summary>Does my recording leave my Mac?<span class="pm"></span></summary>
+      <div class="faq__a"><p>No. Recording, transcription, the AI script and Apple's voices all run on your Mac. If you choose Voicebox, it talks to an app on your own machine.</p></div>
+    </details>
+    <details name="faq" data-reveal>
+      <summary>What do I need to run it?<span class="pm"></span></summary>
+      <div class="faq__a"><p>A Mac with Apple silicon (M1 or later) on macOS 26. AI scripts need Apple Intelligence turned on; recording, editing, voices and export work on any Mac that runs macOS 26.</p></div>
+    </details>
+    <details name="faq" data-reveal>
+      <summary>Which languages can it narrate in?<span class="pm"></span></summary>
+      <div class="faq__a"><p>Any language with an Apple voice on your Mac, 49 on a standard install. The AI writes the script in the language you pick, even when your screen is in another one.</p></div>
+    </details>
+    <details name="faq" data-reveal>
+      <summary>Can it use my own voice?<span class="pm"></span></summary>
+      <div class="faq__a"><p>Talk while you record and Savanna turns your words into polished, timed lines. You can also narrate with your Personal Voice, or a voice you clone in Voicebox.</p></div>
+    </details>
+    <details name="faq" data-reveal>
+      <summary>Can I write the script myself?<span class="pm"></span></summary>
+      <div class="faq__a"><p>Every line is editable, and you can add a line anywhere on the timeline. The AI gives you a first draft, never the last word.</p></div>
+    </details>
+    <details name="faq" data-reveal>
+      <summary>Where do my videos go?<span class="pm"></span></summary>
+      <div class="faq__a"><p>Wherever you save them, as MP4 or MOV. The library keeps track of each one, even after you move the file.</p></div>
+    </details>
+    <details name="faq" data-reveal>
+      <summary>What if a clip is too short to explain?<span class="pm"></span></summary>
+      <div class="faq__a"><p>Savanna won't guess. If a clip is tiny and silent, it asks you for a few words about it before writing anything.</p></div>
+    </details>
+  </div>
+</section>
+
+<!-- ============ CTA: the action tile ============ -->
+<section class="cta" id="download" aria-labelledby="cta-title">
+  <div class="cta__side cta__side--photo" data-reveal><img src="assets/giraffe-at-sunset-23890747878.jpg" width="1920" height="1181" alt="A giraffe crossing a dirt road at sunset" loading="lazy"></div>
+  <div class="cta__main" data-reveal>
+    <h2 id="cta-title" class="cta__title">Make your first film tonight</h2>
+    <p>Savanna is a native Mac app. Download it, press ⇧⌘1, and talk.</p>
+    <a class="button button--ink" href="https://github.com/Savanna-App/releases/releases/latest/download/Savanna.dmg" data-download>Download for Mac</a>
+    <p class="cta__note">For Macs with Apple silicon (M1 or later) on macOS 26<span data-release-version></span>. <a class="link-plain" href="https://github.com/Savanna-App/releases/releases" data-release-page>Release notes</a></p>
+  </div>
+  <div class="cta__side cta__side--field" data-reveal></div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER: the mark, built large ============ -->
+<footer class="footer">
+  <div class="footer__mark wrap" aria-hidden="true">
+    <svg class="footer__sun" viewBox="0 0 100 100"><use href="#sun"/></svg>
+    <span class="footer__name">Savanna</span>
+  </div>
+  <div class="footer__cols wrap">
+    <div><h3>Product</h3><a class="link" href="#how">How it works</a><a class="link" href="#try">Try the button</a><a class="link" href="#features">Features</a></div>
+    <div><h3>Help</h3><a class="link" href="#faq">Questions</a><a class="link" href="https://voicebox.sh">Voicebox</a></div>
+    <div><h3>Brand</h3><a class="link" href="img/mark.svg">The mark</a><a class="link" href="img/icon.png">App icon</a></div>
+    <div class="footer__credits">
+      <p class="credits">Product pictures are real Savanna output. Pictures: <a href="https://commons.wikimedia.org/wiki/File:Serengeti_sunset,_Tanzania.JPG">“Serengeti sunset, Tanzania”</a> by Vincent van Zeijst, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>; <a href="https://www.rawpixel.com/image/3294335/free-photo-image-animal-cc0-countryside">“Silhouettes giraffes tall grass sunset”</a>, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>, via rawpixel; <a href="https://commons.wikimedia.org/w/index.php?curid=166271347">“Gentle Giant of Murchison Falls (elephants) 03”</a> by Ssemmanda will, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Giraffe_at_sunset_(23890747878).jpg">“Giraffe at sunset”</a> by Sonse, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>; <a href="https://commons.wikimedia.org/wiki/File:017_Sunset_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg">“Sunset in the Serengeti National Park”</a> by Giles Laurent, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Acacia_(Vachellia_tortilis),_parque_nacional_de_Amboseli,_Kenia,_2024-05-22,_DD_98.jpg">“Acacia, Amboseli”</a> by Diego Delso, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/w/index.php?curid=133812822">“The golden savanna grasses of Kidepo Valley”</a> by Chapelle Musa 2, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Footage: <a href="https://commons.wikimedia.org/wiki/File:Thomson%27s_Gazelles.ogv">“Thomson's Gazelles”</a> by D. Gordon E. Robertson, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>. All via Wikimedia Commons unless noted.</p>
+    </div>
+  </div>
+  <div class="footer__last wrap">
+    <p>© 2026 Awesome Lab</p>
+    <a class="button button--small" href="#top">Back to the top</a>
+  </div>
+</footer>
+
+<!-- The one shape: the striped setting sun from Savanna's mark -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <clipPath id="sun-clip"><circle cx="50" cy="50" r="50"/></clipPath>
+    <symbol id="sun" viewBox="0 0 100 100">
+      <g clip-path="url(#sun-clip)" fill="currentColor">
+        <rect width="100" height="61"/>
+        <rect y="64.5" width="100" height="6.5"/>
+        <rect y="75" width="100" height="7"/>
+        <rect y="87" width="100" height="13"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<script src="js/site.js" defer></script>
+</body>
+</html>
